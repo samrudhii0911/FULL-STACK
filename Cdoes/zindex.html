@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            position: relative;
+        }
+        .black-box{
+            position: relative;
+            z-index: 1;
+            border: 2 px solid black;
+            height: 100px;
+            margin: 30px;
+        }
+        .red-box{
+            position: absolute;
+            z-index: 3;
+            background: rgb(243, 92, 50);
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+        }
+        .green-box{
+            position: absolute;
+  z-index: 2;
+  background: lightgreen;
+  width: 35%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Z-index Example</h1>
+    
+    <p>Full stack refers to the development of both the front-end (client-side) and back-end (server-side) of a web application</p>
+    <div class="container">
+    <div class="black-box">Black box(z-index:1)</div>
+    <div class="red-box">red box(z-index :2)</div>
+    <div class="green-box">green box(z-index: 3)</div>
+
+    </div>
+</body>
+</html>

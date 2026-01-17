@@ -1,0 +1,239 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(246, 43, 43);
+    background-position: center;
+    background-size: cover;
+}
+header{
+    border: 1px solid white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 80px;
+    margin-left: 80px;
+    background-color: whitesmoke;
+    margin: 20px;
+    color: rgb(17, 14, 9);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    align-items: center;
+    border: 1 px solid black;
+}
+ul a{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.navlinks :hover{
+    color: rgb(245, 8, 8);
+}
+.logo{
+    display: flex;
+    height: 50px;
+    width: 30px;
+    color: rgb(250, 5, 5);
+}
+.button a{
+    color: rgb(15, 12, 9);
+    text-decoration: none;
+    border: 2px solid black;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px 10px;
+    transition: all .5s ease;
+}
+.button :hover{
+    background-color: rgb(249, 92, 92);
+    color: white;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 60px;
+}
+main .left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.navigation a{
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 253, 253);
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 10px 10px;
+    padding: 3px;
+    background-color: rgb(252, 88, 88);
+}
+.left h1{
+  
+    color: rgb(243, 62, 12);
+}
+.right img{
+    width: 500px;
+    border: 1px solid white;
+    border-radius: 100px 100px;
+}
+.icons{
+    display: flex;
+    height: 30px;
+    gap: 7px;
+    width: 30px;
+    color: rgb(7, 2, 1);
+}
+
+.icons img{
+    transition: all .5s ease;
+
+}
+.icons img:hover{
+    transform: scale(1.2);
+}
+
+
+.navlinks{
+    width: 30%;
+    display: flex;
+     align-items: center;
+     justify-content: space-between;
+     list-style-type: none;
+}
+
+
+.active{
+    color: rgb(249, 92, 92);
+    
+}
+
+.download{
+    margin: 20px 0;
+}
+
+.download-btn{
+    background-color: rgb(249, 92, 92);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+
+}
+.container{
+    border: 1px solid white;
+    background-color: white;
+     margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 10px 10px 10px 10px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid white;
+    background-color: white;
+     margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 10px 10px 10px 10px;
+}
+.card h1{
+    color: red;
+    padding: 10px;
+}
+.c1{
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+    margin-top: 10px;
+}
+.c1 div{
+    margin: 20px;
+    padding: 30px;
+    font-size: 20px;
+    border: 1px solid black;
+    transition: all .5 ease;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+
+}
+.c1 :hover{
+    color: white;
+    background-color: rgb(243, 54, 54);
+    transform: scale(1.1);
+}
+img.p1{
+    height: 120px;
+    width: 100px;
+}
+img.p2{
+    height: 120px;
+    width: 90px;
+}
+img.p3{
+    height: 120px;
+    width: 100px;
+}
+.c2{
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   margin-left: 500px;
+   margin-top: 20px;
+   border: 1px solid black;
+   width: 30%;
+   padding: 10px;
+   gap: 10px;
+
+}
+.left2 img{
+    height: 250px;
+    width: 200px;
+    /* padding-left: 150px; */
+}
+.right2{
+    color: rgb(252, 61, 61);
+}
+div .info{
+    border: 1px solid black;
+
+}
+.info{
+    align-items: center;
+    padding-left: 600px;
+    font-size: 16px;
+    /* height: 16px; */
+    width: 500px; 
+    border: 1px solid rgb(28, 2, 2);
+    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 12px;
+}
+.info h2{
+    color: rgb(190, 36, 36);
+}

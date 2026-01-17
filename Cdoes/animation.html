@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            margin: 30px;
+            position: relative;
+        }
+        div{
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            background-color: antiquewhite;
+            animation-name: forwards;
+            animation-duration: 10s;
+            left: 20px;
+            animation-iteration-count: infinite;
+            
+
+        }
+        @keyframes forwards {
+            0%{
+                left: 0px;
+                bottom: 0px;
+                opacity: 1;
+                scale: calc(1.4);
+            }
+            /* 35%{
+                right: 100px;
+                top: 10px;
+            } */
+            50%{
+                left: 500px;
+                bottom: 30px;
+                opacity: 0;
+            }
+            100%{
+                left: 0px;
+                bottom: 0px;
+                opacity: 1;
+            }
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>s</div>
+</body>
+</html>

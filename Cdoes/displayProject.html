@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        img{
+            width: 300px;
+        }
+        div{
+            border:  1px solid gray;
+            width: 300px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <h3>Display:None</h3>
+        <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="img1">
+        <button onclick="remove()">Remove</button>
+    </div>
+
+     <div id="box2">
+        <h3>visibility:Hidden</h3>
+        <img src="https://www.w3schools.com/css/img_forest.jpg" alt="img2">
+        <button onclick="hide()">Hide</button>
+    </div>
+
+     <div id="box3">
+        <h3>Reset All</h3>
+        <img src="https://www.w3schools.com/css/img_lights.jpg" alt="img1">
+        <button onclick="reset()">Reset</button>
+    </div>
+
+    <script>
+        function remove(){
+            document.getElementById("box1").style.display="none"
+        }
+
+          function hide(){
+            document.getElementById("box2").style.visibility="hidden"
+        }
+
+          function reset(){
+            document.getElementById("box1").style.display="block"
+            document.getElementById("box2").style.visibility="visible"
+        }
+    </script>
+</body>
+</html>

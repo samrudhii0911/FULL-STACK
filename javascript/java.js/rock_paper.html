@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+        div{
+            width:300px;
+            height: 250px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px rgba(141, 111, 111, 0.3);
+            transition: all .5s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+
+
+          #button1{
+            background-image: url("../../fist.png");
+          } 
+
+           #button2{
+            background-image: url("../../hand-paper.png");
+          } 
+           #button3{
+            background-image: url("../../scissors.png");
+          } 
+
+        </style>
+</head>
+<body>
+
+
+    <div onclick="playRock()" id="button1"></div>
+    <div onclick="playPaper()" id="button2"></div>
+    <div onclick="playScissor()" id="button3"></div>
+
+
+    <script>
+
+        let userMove;
+        let computerMove;
+
+
+        function computerMovePlay(){
+        let number = Math.random()
+        if(number <= 0.3){
+            computerMove = "rock"
+        }else if(number <= 0.6){
+            computerMove = "paper"
+        }else{
+            computerMove = "scissor"
+        }
+            
+        }
+
+
+         
+        function playRock(){
+            computerMovePlay()
+            userMove = "rock"
+          
+            if(userMove == computerMove){
+                alert("Game tied both selected "+userMove);
+            }
+
+            else if(computerMove == "paper"){
+                alert("Computer wins the game because computer selected "+computerMove);
+                
+            }else{
+                alert("You wins the game because computer selected "+computerMove);
+            }
+            
+        }
+
+        function playPaper(){
+            userMove = "paper"
+         computerMovePlay()
+
+     if(userMove == computerMove){
+                alert("Game tied both selected "+userMove);
+            }
+
+            else if(computerMove == "scissor"){
+                alert("Computer wins the game because computer selected "+computerMove);
+                
+            }else{
+                alert("You wins the game because computer selected "+computerMove);
+            }
+        }
+
+        function playScissor(){
+            userMove = "scissor"
+        computerMovePlay()
+
+            if(userMove == computerMove){
+                alert("Game tied both selected "+userMove);
+            }
+
+            else if(computerMove == "rock"){
+                alert("Computer wins the game because computer selected "+computerMove);
+                
+            }else{
+                alert("You wins the game because computer selected "+computerMove);
+            }
+        }
+   
+   </script>
+</body>
+</html>
